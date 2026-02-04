@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Document</title> <style>
+    <meta name="description" content="Educational Resource Dashboard">
+    <meta property="og:title" content="Research Portal">
+    <meta property="og:type" content="website">
+    
+    <title>Academic Research Tool</title>
+    
+    <style>
+        /* Modern reset for maximum compatibility */
+        * {
+            box-sizing: border-box;
+        }
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             width: 100%;
-            overflow: hidden; /* Prevents double scrollbars */
-            background-color: #000; /* Matches many site backgrounds */
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff; /* White background looks more like a standard doc */
         }
-        iframe {
+        #content-frame {
             position: absolute;
             top: 0;
             left: 0;
@@ -23,8 +33,13 @@
     </style>
 </head>
 <body>
-    <iframe src="https://qn9gn-wyy9-q4icw-rnx7uy-snxnw-vjtdz0o.netlify.app/" 
-            allowfullscreen="true">
+
+    <iframe 
+        id="content-frame"
+        src="https://qn9gn-wyy9-q4icw-rnx7uy-snxnw-vjtdz0o.netlify.app/" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen="true">
     </iframe>
+
 </body>
 </html>
